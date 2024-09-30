@@ -1,5 +1,5 @@
 html{
-    background-color: black;
+    background-color: #202020;
     color: white;
     scroll-behavior: smooth;
 }
@@ -13,6 +13,7 @@ nav {
     position: fixed;
     top: 10px;
     width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -77,12 +78,12 @@ nav.navbar a:hover {
 }
 .home-content h1{
     font-size: 70px;
-    color: orangered;
+    color: #ffd100;
 }
 
 .home-content p{
     font-size: 30px;
-    color: orange;
+    color: #fff4c0;
 }
 
 #about .about_container {
@@ -100,6 +101,7 @@ nav.navbar a:hover {
     font-size: 2.5rem; /* Font size for the heading */
     margin-bottom: 20px; /* Spacing after heading */
     transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    color: #ffd100;
 }
 
 #about .about_text {
@@ -108,6 +110,7 @@ nav.navbar a:hover {
     line-height: 1.5; /* Line height for better readability */
     margin-bottom: 10px; /* Spacing between paragraphs */
     transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    color: #fff4c0;
 }
 
 /* Hover effects */
@@ -120,10 +123,14 @@ nav.navbar a:hover {
     max-width: 80%; /* Maximum width for the container */
     margin: 50px auto; /* Center the container */
     padding: 20px; /* Padding inside the container */
-    background-color: #1e1e1e; /* Darker background for the container */
+    background-color: #202020; /* Darker background for the container */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
     text-align: center;
+    color: #fff4c0;
+}
+#events h1,#coreteam h1,.contact-container h1{
+    color: #ffd100;
 }
 #events .events_container {
     display: flex; /* Flexbox for horizontal layout */
@@ -164,6 +171,7 @@ nav.navbar a:hover {
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
     text-align: center;
+    color: #fff4c0;
 }
 .cm_container {
     display: flex; /* Flexbox for horizontal layout */
@@ -206,7 +214,7 @@ nav.navbar a:hover {
     transform: rotateY(0); /* Show back on hover */
 }
 
-.cm_member-photo {
+.member_photo {
     border-radius: 50%; /* Circular image */
     width: 80px; /* Image width */
     height: 80px; /* Image height */
@@ -231,4 +239,36 @@ nav.navbar a:hover {
 .cm_back p {
     text-align: center; /* Center text on the back */
     margin: 5px 0; /* Spacing for paragraphs */
+}
+
+.contactme{
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #fff4c0;
+}
+.contact-container {
+    background-color: #1e1e1e; /* Darker background for the container */
+    padding: 20px; /* Padding around the contact section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    width: 300px; /* Fixed width */
+    text-align: center; /* Center text alignment */
+}
+
+
+.contact-link {
+    color: #00aaff; /* Bright color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.confirmation-message {
+    margin-top: 15px; /* Spacing above the confirmation message */
+    color: #00ff00; /* Green text for confirmation message */
 }
