@@ -1,6 +1,7 @@
 html{
     background-color: black;
     color: white;
+    scroll-behavior: smooth;
 }
 nav {
     display: flex;
@@ -82,4 +83,152 @@ nav.navbar a:hover {
 .home-content p{
     font-size: 30px;
     color: orange;
+}
+
+#about .about_container {
+    max-width: 80%; /* Maximum width for the container */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #1e1e1e; /* Darker background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: center;
+}
+
+
+#about .about_heading {
+    font-size: 2.5rem; /* Font size for the heading */
+    margin-bottom: 20px; /* Spacing after heading */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+#about .about_text {
+    border-top: 10px;
+    font-size: 1.2rem; /* Font size for the text */
+    line-height: 1.5; /* Line height for better readability */
+    margin-bottom: 10px; /* Spacing between paragraphs */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Hover effects */
+#about .about_container:hover .about_heading,
+#about .about_container:hover .about_text {
+    transform: scale(0.95); /* Zoom out effect */
+}
+
+#events {
+    max-width: 80%; /* Maximum width for the container */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #1e1e1e; /* Darker background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: center;
+}
+#events .events_container {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+#events .events_card {
+    background-color: #1e1e1e; /* Darker background for cards */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply to images */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    max-width: 300px; /* Limit card width */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+#events .events_card img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#events .event-title {
+    font-size: 1.5rem; /* Font size for event title */
+    margin: 10px 0; /* Spacing around title */
+}
+
+#events .events_description {
+    font-size: 1rem; /* Font size for description */
+    padding: 0 10px; /* Padding for description text */
+}
+
+#coreteam {
+    max-width: 90%; /* Maximum width for the container */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #1e1e1e; /* Darker background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: center;
+}
+.cm_container {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.cm_card {
+    position: relative;
+    width: 200px; /* Card width */
+    height: 250px; /* Card height */
+    perspective: 1000px; /* 3D effect */
+}
+
+.cm_front, .cm_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when facing away */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background-color: #1e1e1e; /* Darker background for card */
+    transition: transform 0.6s; /* Smooth transition for flip effect */
+}
+
+.cm_back {
+    transform: rotateY(180deg); /* Start the back side rotated */
+}
+
+.cm_card:hover .cm_front {
+    transform: rotateY(180deg); /* Flip to back on hover */
+}
+
+.cm_card:hover .cm_back {
+    transform: rotateY(0); /* Show back on hover */
+}
+
+.cm_member-photo {
+    border-radius: 50%; /* Circular image */
+    width: 80px; /* Image width */
+    height: 80px; /* Image height */
+    margin-bottom: 10px; /* Spacing below image */
+}
+
+.cm_member-name {
+    font-size: 1.2rem; /* Font size for member's name */
+    margin: 0; /* Remove default margin */
+}
+
+.cm_member-role {
+    font-size: 1rem; /* Font size for member's role */
+    margin: 0; /* Remove default margin */
+}
+
+.cm_back h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2rem; /* Font size for heading on back */
+}
+
+.cm_back p {
+    text-align: center; /* Center text on the back */
+    margin: 5px 0; /* Spacing for paragraphs */
 }
